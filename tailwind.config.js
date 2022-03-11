@@ -3,5 +3,5 @@ module.exports = {
   theme: {
     extend: {},
   },
-  plugins: [],
+  plugins: ['@tailwindcss/forms', '@tailwindcss/line-clamp', '@tailwindcss/typography'],
 }
