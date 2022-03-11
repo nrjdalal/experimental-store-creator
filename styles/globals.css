@@ -6,7 +6,7 @@
   }
   [type='password'],
   [type='text'] {
-    @apply my-1 h-8 w-full rounded-md border-2 border-black border-opacity-10 px-2 py-1;
+    @apply my-1 h-10 w-full rounded-md border-2 border-black border-opacity-10 px-2 py-1;
   }
 }
 
