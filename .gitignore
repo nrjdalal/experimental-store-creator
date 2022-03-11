@@ -36,3 +36,10 @@ yarn-error.log*
 
 # typescript
 *.tsbuildinfo
+
+# folders
+/_dev/
+
+# files
+.env
+package-lock.json
