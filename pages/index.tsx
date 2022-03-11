@@ -32,7 +32,7 @@ const Home: NextPage = () => {
         <option value="USA">USA</option>
       </select>
 
-      <button className="mt-10 h-8 w-full rounded-md bg-blue-500 text-white">Submit</button>
+      <button className="mt-10 h-8 w-full rounded-md bg-emerald-500 text-white">Submit</button>
     </div>
   )
 }
