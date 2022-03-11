@@ -5,8 +5,7 @@
     @apply my-1 w-full text-left;
   }
   [type='password'],
-  [type='text'],
-  select {
+  [type='text'] {
     @apply my-1 h-8 w-full rounded-md border-2 border-black border-opacity-10 px-2 py-1;
   }
 }

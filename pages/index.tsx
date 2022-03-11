@@ -23,14 +23,6 @@ const Home: NextPage = () => {
       }
       <label>Password</label>
       <input type="password" />
-      {
-        // ~ country
-      }
-      <label>Store Country</label>
-      <select>
-        <option value="India">India</option>
-        <option value="USA">USA</option>
-      </select>
 
       <button className="mt-10 h-8 w-full rounded-md bg-emerald-500 text-white">Submit</button>
     </div>
