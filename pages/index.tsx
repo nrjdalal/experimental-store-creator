@@ -1,13 +1,16 @@
 import type { NextPage } from 'next'
+import { useRouter } from 'next/router'
 import { useState } from 'react'
 
 const Home: NextPage = () => {
-  const [store, setStore] = useState('')
-  const [name, setName] = useState('')
-  const [email, setEmail] = useState('')
-  const [password, setPassword] = useState('')
+  const router = useRouter()
 
-  const createStore = () => {
+  const [store, setStore] = useState('nrjdalal')
+  const [name, setName] = useState('Neeraj Dalal')
+  const [email, setEmail] = useState('admin@nrjdalal.com')
+  const [password, setPassword] = useState('Dummy@123')
+
+  const createStore = async () => {
     const data = {
       store: store,
       name: name,
@@ -15,7 +18,19 @@ const Home: NextPage = () => {
       password: password,
     }
 
-    console.log(data)
+    const res = await fetch('/api/store', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data),
+    })
+
+    if (res.status === 201) {
+      router.push(`https://${data.store}.localhost.next`)
+    } else {
+      console.log('Something went wrong!')
+    }
   }
 
   return (

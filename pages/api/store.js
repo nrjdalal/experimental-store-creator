@@ -8,7 +8,7 @@ export default async function handle(req, res) {
         const { email, name, password, store } = req.body
 
         const data = {
-          xid: xid(24),
+          xid: xid(),
           email,
           name,
           password,
@@ -28,7 +28,6 @@ export default async function handle(req, res) {
         })
     }
   } catch (error) {
-    console.log(error)
     return res.status(400).json(error)
   }
 }
