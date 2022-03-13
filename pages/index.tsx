@@ -18,6 +18,8 @@ const Home: NextPage = () => {
       password: password,
     }
 
+    console.log(data)
+
     const res = await fetch('/api/store', {
       method: 'POST',
       headers: {
