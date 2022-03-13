@@ -1,0 +1,10 @@
+POST http://localhost:3000/api/store
+User-Agent: rest-client
+Content-Type: application/json
+
+{
+  "email": "admin@nrjdalal.com",
+  "name": "Neeraj Dalal",
+  "password": "Dummy@123",
+  "store": "nrjdalal"
+}
